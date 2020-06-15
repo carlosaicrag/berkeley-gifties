@@ -148,5 +148,23 @@ body {
 }
 
 .throwing-hat-student-name-container{
+    position: absolute;
+    z-index: -1;
+}
+
+canvas{
+    width: 70%;
+    height: 50%;
+}
+
+.throwing-hat-student-name-container .left{
     position: relative;
+    right: 110%;
+    bottom:200px;
+}
+
+.throwing-hat-student-name-container .right{
+    position: relative;
+    left: 110%;
+    bottom:200px;
 }
