@@ -1,0 +1,24 @@
+{
+  "name": "virtual-graduation",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "homepage": "https: //carlosaicrag.github.io/virtual_graduation/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx webpack -w --mode=development",
+    "local-start": "npx webpack ./src/index.js -o bundle.js --watch --mode=development",
+    "predeploy": "npm run build",
+    "build": "webpack --watch --mode=development",
+    "deploy": "npm run build && gh-pages -d dist",
+    "pages": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}

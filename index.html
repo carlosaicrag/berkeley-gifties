@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./dist/main.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/graduation.css">
+</head>
+
+<body>
+    <div class="background-container" >
+       <img src="./dist/assets/gifties-background.png"></img>
+       <img src="./dist/assets/gifties-background.png"></img>
+    </div>
+    
+    <div class="title-container">
+        <div class="cohort-title-container">
+            <img src="./dist/assets/app-academy-logo-white.png" alt="" class="app-academy-logo">
+            <h1 class="title-text" >Gifties 2020 (Shelter in Place Edition)</h1>
+        </div>
+        <button id="next-student">Next Winner</button>
+
+        <br>
+
+            <label class="debug" for="">Starting Student?
+                <input type="text">
+                <button id="current-student-button">Submit</button>
+            </label>
+    </div>
+
+    <h1 id="student"></h1>
+    <div id="canvas-container">
+        <div class="throwing-hats-gif-container left">
+            <img src="./dist/assets/fireworks1.gif" alt="">
+           <!-- 
+               <img src="./dist/assets/throwing_hats_graduation.gif" alt="" class="throwing-hats-gif"> 
+            -->
+        </div>
+        <div class="student-names-container">
+            <h1 class="graduate-title">Recepients</h1>
+            <marquee direction="up">
+                <ol id="ol1"></ol>
+            </marquee>
+        </div>
+        <canvas id="canvas" width="1500" height="800" ></canvas>
+        <div class="student-names-container">
+            <h1 class="graduate-title" >Recepients</h1>
+            <marquee direction="up">
+                <ol id="ol2"></ol>
+            </marquee>
+        </div>
+        <div class="throwing-hats-gif-container right">
+            <img src="./dist/assets/fireworks1.gif" alt="">
+           <!--
+            <img src="./dist/assets/throwing_hats_graduation.gif" class="throwing-hats-gif">
+           --> 
+        </div>
+    </div>
+
+    <audio controls id="go-bears">
+        <source src="./dist/assets/gifties-go-bears.mp3" type="audio/mpeg">
+        GEEEET DUNKED ON!
+    </audio>
+
+    <!-- <div id="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/foyAOoVagWw?autoplay=1&mute=0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> -->
+</body>
+
+</html>
