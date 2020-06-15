@@ -19,6 +19,7 @@ class Graduate {
         this.ctx.drawImage(ceremony.audienceChairs, 0, 600, this.canvas.width, 70)
         this.ctx.drawImage(ceremony.audienceChairs, 0, 670, this.canvas.width, 70)
 
+        this.scaleGraduateImg();
         if (startingPosition[0] >= 600 && startingPosition[0] <= 810) {
             if (startingPosition[0] <= 810) {
                 jumpHeight[0] = jumpHeight[0] + 10;
@@ -40,7 +41,6 @@ class Graduate {
                 80, 80)
         }
 
-        this.scaleGraduateImg();
 
         if (startingPosition[0] < 750) {
             this.ctx.drawImage(ceremony.trophy, 720, 300, 50, 80); //draw diploma
@@ -72,11 +72,11 @@ class Graduate {
                 button.disabled = false
                 studentName.innerHTML  = ""
             }
-        }, 70)
+        }, 50)
     }
 
     scaleGraduateImg() {
-        let scale = Math.max(150 / this.img_url.width, 170 / this.img_url.height);
+        let scale = Math.max(400 / this.img_url.width, 250 / this.img_url.height);
         let x = 750 - ((this.img_url.width / 2) * scale);
         let y = 200 - ((this.img_url.height / 2) * scale);
         this.ctx.drawImage(this.img_url, x, y, this.img_url.width * scale, this.img_url.height * scale);

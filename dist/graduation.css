@@ -1,6 +1,7 @@
 #canvas-container{
     display: flex;
     justify-content: center;
+    /* position: relative; */
 }
 #videos{
     display: flex;
@@ -40,6 +41,7 @@
     font-size: 40px;
     /* background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); */
     background-image: linear-gradient(to left,blue,yellow);
+    /* color: yellow; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -69,9 +71,9 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    position: relative;
-    top: -320px;
-    z-index: -5;
+    /* position: absolute; */
+    /* top: -320px; */
+    /* z-index: -1; */
 } 
 
 body{
@@ -145,3 +147,6 @@ body {
     bottom: 20px
 }
 
+.throwing-hat-student-name-container{
+    position: relative;
+}
