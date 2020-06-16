@@ -72,13 +72,13 @@ class Graduate {
                 button.disabled = false
                 studentName.innerHTML  = ""
             }
-        }, 50)
+        }, 100)
     }
 
     scaleGraduateImg() {
-        let scale = Math.max(350 / this.img_url.width, 250 / this.img_url.height);
+        let scale = Math.max(450 / this.img_url.width, 350 / this.img_url.height);
         let x = 750 - ((this.img_url.width / 2) * scale);
-        let y = 200 - ((this.img_url.height / 2) * scale);
+        let y = 350 - ((this.img_url.height / 2) * scale);
         this.ctx.drawImage(this.img_url, x, y, this.img_url.width * scale, this.img_url.height * scale);
     }
 

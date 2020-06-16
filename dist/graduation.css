@@ -153,8 +153,8 @@ body {
 }
 
 canvas{
-    width: 70%;
-    height: 50%;
+    width: 100%;
+    height: 80%;
 }
 
 .throwing-hat-student-name-container .left{
@@ -167,4 +167,17 @@ canvas{
     position: relative;
     left: 110%;
     bottom:200px;
+}
+
+.next-student-container{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    bottom:50px
+}
+
+.audio-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
 }

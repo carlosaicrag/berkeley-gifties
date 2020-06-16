@@ -19,55 +19,24 @@
         <div class="cohort-title-container">
             <h1 class="title-text" >Gifties 2020 (Shelter in Place Edition)</h1>
         </div>
-        <button id="next-student">Next Winner</button>
-
-        <br>
-
             <label class="debug" for="">Starting Student?
                 <input type="text">
                 <button id="current-student-button">Submit</button>
             </label>
     </div>
-
-    <h1 id="student"></h1>
-    <div id="canvas-container">
-        <div class="throwing-hat-student-name-container left">
-            <div class="throwing-hats-gif-container left">
-                <img src="./dist/assets/fireworks1.gif" alt="">
-            </div>
-            <div class="throwing-hats-gif-container left">
-                <img src="./dist/assets/fireworks1.gif" alt="">
-            </div>
-        </div>
-        <div class="student-names-container">
-            <h1 class="graduate-title">Recepients</h1>
-            <marquee direction="up">
-                <ol id="ol1"></ol>
-            </marquee>
-        </div>
-
+    <h2 id="student"></h1>
+    <div id="canvas-container"> 
         <canvas id="canvas" width="1500" height="800" ></canvas>
-
-        <div class="student-names-container">
-            <h1 class="graduate-title" >Recepients</h1>
-            <marquee direction="up">
-                <ol id="ol2"></ol>
-            </marquee>
-        </div>
-        <div class="throwing-hat-student-name-container">
-            <div class="throwing-hats-gif-container right">
-                <img src="./dist/assets/fireworks1.gif" alt="">
-            </div>
-            <div class="throwing-hats-gif-container right">
-                <img src="./dist/assets/fireworks1.gif" alt="">
-            </div>
-        </div>
     </div>
-
-    <audio controls id="go-bears">
-        <source src="./dist/assets/gifties-go-bears.mp3" type="audio/mpeg">
-        GEEEET DUNKED ON!
-    </audio>
+    <div class="next-student-container">
+        <button id="next-student">Next Winner</button>
+    </div>
+    <div class="audio-container">
+        <audio controls id="go-bears">
+            <source src="./dist/assets/gifties-go-bears.mp3" type="audio/mpeg">
+            GEEEET DUNKED ON!
+        </audio>
+    </div>
 </body>
 
 </html>
