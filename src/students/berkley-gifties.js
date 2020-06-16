@@ -1,7 +1,7 @@
 const students = [
   {
     "name":"Andrea",
-    "imageUrl": "./dist/assets/gifties-default-pic.png"
+    "imageUrl": "./dist/assets/gifties-andrea.png"
   },
   {
     "name":"Ada",
@@ -29,7 +29,7 @@ const students = [
   },
   {
     "name":"Debbie",
-    "imageUrl": "./dist/assets/gifties-default-pic.png"
+    "imageUrl": "./dist/assets/gifties-debbie.png"
   },
   {
     "name":"Erica",
@@ -37,15 +37,15 @@ const students = [
   },
   {
     "name":"Erik",
-    "imageUrl": "./dist/assets/gifties-default-pic.png"
+    "imageUrl": "./dist/assets/gifties-eric.png"
   },
   {
     "name":"Ion",
-    "imageUrl": "./dist/assets/gifties-default-pic.png"
+    "imageUrl": "./dist/assets/gifties-ion.png"
   },
   {
     "name":"Jason",
-    "imageUrl": "./dist/assets/gifties-default-pic.png"
+    "imageUrl": "./dist/assets/gifties-jason.png"
   },
   {
     "name":"Joyce",
@@ -65,7 +65,7 @@ const students = [
   },
   {
     "name":"Margaret",
-    "imageUrl": "./dist/assets/gifties-default-pic.png"
+    "imageUrl": "./dist/assets/gifties-margaret.png"
   },
   {
     "name":"Margie",
@@ -81,7 +81,7 @@ const students = [
   },
   {
     "name":"Tracy",
-    "imageUrl": "./dist/assets/gifties-default-pic.png"
+    "imageUrl": "./dist/assets/gifties-tracy.png"
   }
 ]
 

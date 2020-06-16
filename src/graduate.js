@@ -75,7 +75,7 @@ class Graduate {
                 button.disabled = false
                 studentName.innerHTML = ""
             }
-        }, 50)
+        }, 10)
     }
 
     scaleGraduateImg() {
