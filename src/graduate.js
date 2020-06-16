@@ -7,7 +7,7 @@ class Graduate {
         this.canvas = document.querySelector("canvas")
     }
 
-    drawGraduate(ceremony,i,startingPosition, jumpHeight){
+    drawGraduate(ceremony, i, startingPosition, jumpHeight) {
         let spriteSize = [270, 270]
         let runningSprites = [[340, 270], [640, 270], [940, 270]];
         // let dashSprites = [[350, 250], [400, 250], [450, 250]];
@@ -29,7 +29,7 @@ class Graduate {
 
             this.ctx.drawImage(ceremony.bearSpriteSheet,
                 // runningSprites[i % runningSprites.length][0], runningSprites[i % runningSprites.length][1],
-                jumpSprite[0], jumpSprite[1]-20,
+                jumpSprite[0], jumpSprite[1] - 20,
                 spriteSize[0], spriteSize[1],
                 startingPosition[0], startingPosition[1] - jumpHeight,
                 80, 80)
@@ -44,14 +44,17 @@ class Graduate {
 
         if (startingPosition[0] < 750) {
             this.ctx.drawImage(ceremony.trophy, 720, 300, 50, 80); //draw diploma
-        } else if (startingPosition[0] === 750) {
+        }
+
+        if (startingPosition[0] < 1200) {
             ceremony.sound.play();
-        } else {
-            // this.ctx.drawImage(ceremony.aalogo, 365, 55, 170, 150);
+        } else if (startingPosition[0] === 1200) {
+            ceremony.sound.pause()
+            ceremony.sound.currentTime = 0
         }
     }
 
-    moveAcrossScreen(ceremony,button) {
+    moveAcrossScreen(ceremony, button) {
         clearInterval(ceremony.interval);
         let startingPosition = [80, 445]
         let jumpSprite = [300, 100] //might get to use this later
@@ -63,16 +66,16 @@ class Graduate {
         let interval = setInterval(() => {
             startingPosition[0] += 10
             i++
-            this.drawGraduate(ceremony,i, startingPosition, jumpHeight)
+            this.drawGraduate(ceremony, i, startingPosition, jumpHeight)
 
             if (startingPosition[0] >= 1270) {
                 clearInterval(interval)
                 this.ctx.clearRect(0, 0, 1000, 1000)
                 ceremony.constructStage()
                 button.disabled = false
-                studentName.innerHTML  = ""
+                studentName.innerHTML = ""
             }
-        }, 100)
+        }, 50)
     }
 
     scaleGraduateImg() {
