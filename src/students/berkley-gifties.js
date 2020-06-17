@@ -1,5 +1,25 @@
 const students = [
   {
+    "name":"Brighid",
+    "imageUrl": "./dist/assets/gifties-brighid.png"
+  },
+  {
+    "name":"David",
+    "imageUrl": "./dist/assets/gifties-david.png"
+  },
+  {
+    "name":"Armita",
+    "imageUrl": "./dist/assets/gifties-armita.png"
+  },
+  {
+    "name":"Carol",
+    "imageUrl": "./dist/assets/gifties-margie.png"
+  },
+  {
+    "name":"Brenda",
+    "imageUrl": "./dist/assets/gifties-brenda.png"
+  },
+  {
     "name":"Andrea",
     "imageUrl": "./dist/assets/gifties-andrea.png"
   },
@@ -8,36 +28,12 @@ const students = [
     "imageUrl": "./dist/assets/gifties-ada.png"
   },
   {
-    "name":"Armita",
-    "imageUrl": "./dist/assets/gifties-armita.png"
-  },
-  {
-    "name":"Brenda",
-    "imageUrl": "./dist/assets/gifties-brenda.png"
-  },
-  {
-    "name":"Brighid",
-    "imageUrl": "./dist/assets/gifties-brighid.png"
-  },
-  {
-    "name":"Carol",
-    "imageUrl": "./dist/assets/gifties-default-pic.png"
-  },
-  {
-    "name":"David",
-    "imageUrl": "./dist/assets/gifties-david.png"
-  },
-  {
-    "name":"Debbie",
-    "imageUrl": "./dist/assets/gifties-debbie.png"
+    "name":"Joyce",
+    "imageUrl": "./dist/assets/gifties-joyce.png"
   },
   {
     "name":"Erica",
     "imageUrl": "./dist/assets/gifties-erica.png"
-  },
-  {
-    "name":"Erik",
-    "imageUrl": "./dist/assets/gifties-eric.png"
   },
   {
     "name":"Ion",
@@ -48,12 +44,16 @@ const students = [
     "imageUrl": "./dist/assets/gifties-jason.png"
   },
   {
-    "name":"Joyce",
-    "imageUrl": "./dist/assets/gifties-joyce.png"
+    "name":"Erik",
+    "imageUrl": "./dist/assets/gifties-eric.png"
   },
   {
     "name":"Kelly",
     "imageUrl": "./dist/assets/gifties-kelly.png"
+  },
+  {
+    "name":"Debbie",
+    "imageUrl": "./dist/assets/gifties-debbie.png"
   },
   {
     "name":"Lydia",
@@ -69,7 +69,7 @@ const students = [
   },
   {
     "name":"Margie",
-    "imageUrl": "./dist/assets/gifties-default-pic.png"
+    "imageUrl": "./dist/assets/gifties-margie.png"
   },
   {
     "name":"Matt",
