@@ -20,19 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let mid = Math.floor(graduates.length/2)
 
-    //adding to list that appears on sides of stage
-    // for (let i = 0; i < graduates.length;i++) {
-    //     let listItem = document.createElement("li")
-    //     listItem.textContent = graduates[i].name
-    //     ol1.appendChild(listItem)
-    // }
-
-    // for (let i = 0; i < graduates.length;i++) {
-    //     let listItem = document.createElement("li")
-    //     listItem.textContent = graduates[i].name
-    //     ol2.appendChild(listItem)
-    // }
-
     //creating ceremony
     let ceremony = new Ceremony(ctx, graduates)
     ceremony.sound = goBearsSound; // give sound to ceremony instance
